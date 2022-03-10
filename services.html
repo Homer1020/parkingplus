@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1p:wght@400;500;700;800&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<title>ParkingPlus</title>
+	<!-- SLICK CAROUSEL -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!-- Site Header -->
+	<header class="site-header" id="site-header">
+		<div class="container">
+			<a href="index.html" class="site-header__brand">
+				<img src="img/logo.png" alt="Logo">
+				<span>Parking Plus</span>
+			</a>
+
+			<!-- Navbar -->
+			<nav class="navbar" id="navbar">
+				<ul class="navbar__nav">
+					<li class="navbar__item">
+						<a href="index.html" class="navbar__link">
+						Inicio
+					</a>
+					</li>
+					<li class="navbar__item">
+						<a href="about.html" class="navbar__link">
+						Quiénes Somos
+					</a>
+					</li>
+					<li class="navbar__item active">
+						<a href="services.html" class="navbar__link">
+						Servicios
+					</a>
+					</li>
+					<li class="navbar__item">
+						<a href="prices.html" class="navbar__link">
+						Precios
+					</a>
+					</li>
+					<li class="navbar__item">
+						<a href="contact.html" class="navbar__link">
+						Contacto
+					</a>
+					</li>
+					<li class="navbar__item navbar__item--login">
+						<a href="login.html" class="btn btn--primary btn--only-icon">
+							Iniciar Sesión
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- Navbar -->
+
+			<button class="navbar__toggler" id="toggle-navbar">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+	<!-- End Site Header -->
+
+	<!-- Main Banner -->
+	<div class="banner l-main-banner" style="background-image: url(img/car.jpg);">
+		<div class="container">
+			<div>
+				<!-- Text Center: Transforma un monton de estilos :D -->
+				<div class="l-main-banner__content text-center">
+					<h1 class="l-main-banner__title">
+						<span><span>Tu vuelas</span></span>
+						<br>
+						<span><span>Nosotros Aparcamos</span></span>
+					</h1>
+					<p class="l-main-banner__info">Aeropuerto de Madrid - Barajas</p>
+					<nav class="l-main-banner__links">
+						<a href="">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</nav>
+				</div>
+			</div>
+
+			<div>
+				<div class="card border-0 card--lg card--shadow">
+					<div class="card__header">
+						<div class="icon-text">
+							<i class="fa fa-trophy"></i>
+							<h3 class="card__title icon-text__content">¿Por Qué Elegirnos?</h3>
+						</div>
+					</div>
+					<div class="card__body">
+						<p class="card__text">Nuestro Parking situado junto al aeropuerto de Madrid Barajas, cuenta con todo lo necesario para que viaje tranquilo y su vehículo esté siempre seguro.</p>
+
+            <p class="card__text">A precios tan económicos y de calidad. ¿Por qué pagar más?.</p>
+
+            <p class="card__text">Nuestros conductores le atenderán amablemente con mucha profesionalidad y responsabilidad, por ello contamos solo con personal altamente cualificado.</p>
+
+            <p class="card__text">Contamos con servicios adicionales de los que podrá beneficiarse a precios magníficos. Así mientras Ud está de viaje su vehículo estará reluciente a su regreso.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Main Banner -->
+
+  <!-- Abouut -->
+  <div class="l-section bg-gray">
+    <div class="container">
+      <h2 class="l-section__simple-title text-center">NUESTROS SERVICIOS DE PARKING</h2>
+
+			<div class="l-grid-services">
+				<div data-aos="flip-left">
+					<div class="card border-0 card--lg">
+						<div class="card__body">
+							<h2 class="card__title card__title--separator">¿ CÓMO FUNCIONA ?</h2>
+							<p class="card__text">Hacer reserva, indicándonos el día y hora en que solicita nuestro servicio</p>
+							<p class="card__text">En la terminal que nos ha indicado y a la hora señalada recogeremos su vehículo con nuestros conductores debidamente identificados por la empresa.	
+							<p class="card__text">Haremos una inspección a su vehículo.</p>
+							<p class="card__text">Viaje tranquilo y a su regreso estaremos en la terminal del aeropuerto esperando con su coche.</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="flip-up">
+					<div class="card border-0 card--lg">
+						<div class="card__body">
+							<h2 class="card__title card__title--separator">VIGILANCIA</h2>
+							<p class="card__text">Nuestros aparcamientos cuentan con cámaras de vigilancia con circuito cerrado en todo el recinto.</p>
+							<p class="card__text">Además se realizan constantemente inspecciones por nuestros vigilantes las 24 horas del día los 365 días del año.</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="flip-left">
+					<div class="card border-0 card--lg">
+						<div class="card__body">
+							<h2 class="card__title card__title--separator">Seguros</h2>
+							<p class="card__text">Nuestro servicio incluye seguro de Responsabilidad Civil para cualquier tipo de incidencia que podamos causar a su coche, desde el momento que nuestro conductor le realice su inspección, hasta que su vehículo es entregado.</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="flip-up">
+					<div class="card border-0 card--lg">
+						<div class="card__body">
+							<h2 class="card__title card__title--separator">RECEPCIÓN</h2>
+							<p class="card__text">Hacer reserva, indicándonos el día y hora en que solicita nuestro servicio</p>
+							<p class="card__text">¿ Cómo recepcionan mi Vehículo ? Para su tranquilidad hacemos una comprobación fotográfica de su coche (tanto interior como exterior) esto puede tardar solo unos minutos.</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="flip-right">
+					<div class="card border-0 card--lg">
+						<div class="card__body">
+							<h2 class="card__title card__title--separator">RETRASOS</h2>
+							<p class="card__text">¿ Qué ocurre si mi Vuelo sufre algún retraso ?. No hay inconveniente, si ocurriese contacte con nosotros para realizar el cambio de horario de su vuelo, recuerde que nuestro servicio se factura cada 24 horas, y en el caso de un retraso hay 4 horas de cortesía para su entrega.</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="flip-left">
+					<div class="card border-0 card--lg">
+						<div class="card__body">
+							<h2 class="card__title card__title--separator">PAGOS</h2>
+							<p class="card__text">¿ De qué forma puedo realizar el Pago ?. El Importe de su Servicio se paga a la entrega de su vehículo una vez se haya prestado el servicio, puede pagar en metálico o con tarjeta de crédito o débito (en este caso debe indicarlo previamente).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </div>
+  <!-- End Abouut -->
+
+	<!-- Site Footer -->
+	<footer class="site-footer bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0 text-lg-center">
+					<img src="https://parkingplus.es/aparcamiento/images/logo_factura.png" alt="" class="img-fluid" width="190">
+					<nav class="social justify-content-start justify-content-lg-center">
+						<a href="#">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</nav>
+				</div>
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0">
+					<ul>
+						<li>
+							<strong>
+								<i class="fa fa-map-marker-alt mr-1"></i>
+								Dirección:
+							</strong>
+							<br>Calle Miguel de Cervantes 10. CP 28860.
+						</li>
+						<li>
+							<strong>
+								<i class="fa fa-phone mr-1"></i>
+								ASISTENCIA EN AEROPUERTO:
+							</strong>
+							<br>+34 603 28 48 00
+						</li>
+						<li>
+							<strong>
+								<i class="fa fa-mobile-alt mr-1"></i>
+								RESERVAS:
+							</strong>
+							<br>+34 912 12 86 59
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0">
+					<nav>
+						<ul class="simple-list">
+							<li><a href="#">Política de Privacidad</a></li>
+							<li><a href="#">Política de Uso de Cookies</a></li>
+							<li><a href="#">Condiciones Generales de Contrato y Servicio</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0">
+					<h3>Contacto:</h3>
+					<ul>
+						<li>
+							<a href="">
+								<i class="fa fa-envelope mr-1"></i>
+								contacto@parkingplus.es
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fab fa-whatsapp mr-1"></i>
+								+34 603 28 48 00
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Site Footer -->
+
+	<!-- SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

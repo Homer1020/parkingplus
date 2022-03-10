@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1p:wght@400;500;700;800&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<title>ParkingPlus</title>
+	<!-- SLICK CAROUSEL -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!-- Site Header -->
+	<header class="site-header" id="site-header">
+		<div class="container">
+			<a href="index.html" class="site-header__brand">
+				<img src="img/logo.png" alt="Logo">
+				<span>Parking Plus</span>
+			</a>
+
+			<!-- Navbar -->
+			<nav class="navbar" id="navbar">
+				<ul class="navbar__nav">
+					<li class="navbar__item active">
+						<a href="index.html" class="navbar__link">
+						Inicio
+					</a>
+					</li>
+					<li class="navbar__item">
+						<a href="about.html" class="navbar__link">
+						Quiénes Somos
+					</a>
+					</li>
+					<li class="navbar__item">
+						<a href="services.html" class="navbar__link">
+						Servicios
+					</a>
+					</li>
+					<li class="navbar__item">
+						<a href="prices.html" class="navbar__link">
+						Precios
+					</a>
+					</li>
+					<li class="navbar__item">
+						<a href="contact.html" class="navbar__link">
+						Contacto
+					</a>
+					</li>
+					<li class="navbar__item navbar__item--login">
+						<a href="login.html" class="btn btn--primary btn--only-icon">
+							Iniciar Sesión
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- Navbar -->
+
+			<button class="navbar__toggler" id="toggle-navbar">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+	<!-- End Site Header -->
+
+	<!-- Main Banner -->
+	<div class="banner l-main-banner" style="background-image: url(img/car.jpg);">
+		<div class="container">
+			<div>
+				<!-- Text Center: Transforma un monton de estilos :D -->
+				<div class="l-main-banner__content text-center">
+					<h1 class="l-main-banner__title">
+						<span><span>Tu vuelas</span></span>
+						<br>
+						<span><span>Nosotros Aparcamos</span></span>
+					</h1>
+					<p class="l-main-banner__info">Aeropuerto de Madrid - Barajas</p>
+					<nav class="l-main-banner__links">
+						<a href="">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</nav>
+				</div>
+			</div>
+
+			<div>
+				<div class="card card--lg card--shadow">
+					<div class="card__body">
+						<h3 class="card__title card__title--separator">Haga Su Reserva</h3>
+						<p class="card__text">Recogeremos tu coche en el aeropuerto el día y a la hora que nos digas. A tu vuelta, te estaremos esperando en la puerta de la terminal.<p>
+					</div>
+					<form action="#" class="l-form-reserve card__body">
+						<div class="l-form-reserve__form">
+							<div>
+								<label for="fc1">Fecha de recogida</label>
+								<input type="date" name="fc1" id="fc1" class="input">
+							</div>
+							<div>
+								<label for="fc2">Hora</label>
+								<input type="time" name="fc2" id="fc2" class="input">
+							</div>
+							<div>
+								<label for="fc3">Fecha de Regreso</label>
+								<input type="date" name="fc3" id="fc3" class="input">
+							</div>
+							<div>
+								<label for="fc4">Hora</label>
+								<input type="time" name="fc4" id="fc4" class="input">
+							</div>
+						</div>
+						<div class="text-center l-form-reserve__bottom">
+							<button class="btn btn--primary btn--sm">Calcule su Tarifa</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Main Banner -->
+
+	<!-- Welcome -->
+	<section class="l-welcome" style="background-image: url(img/pink.jpg);">
+		<div class="container">
+			<div class="d-flex align-items-center">
+				<img src="img/hands.png" alt="hands" width="80" class="d-none d-md-inline mr-4">
+				<div class="l-welcome__content">
+					<h2>BIENVENIDOS A PARKING PLUS</h2>
+					<p class="text-primary"><strong>MEDIDAS ANTI-COVID : "DESINFECCIÓN CON OZONO GRATUITA PARA TU COCHE"</strong></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Welcome -->
+
+	<!-- Section -->
+	<section class="l-section l-section--steps bg-gray">
+		<div class="container">
+			<h2 class="l-section__title">Nuestros Servicios</h2>
+			<div class="l-section--services">
+				<div class="card card--lg card--border card--shadow-sm" data-aos="fade-up">
+					<img src="img/car.png" alt="Carro" class="card__img-fx">
+					<div class="card__header">
+						<div class="icon-text">
+							<i class="fa fa-trophy"></i>
+							<h3 class="card__title icon-text__content">SERVICIO PREMIUM</h3>
+						</div>
+					</div>
+					<div class="card__body">
+						<p class="card__text card__text--dest text-justify">RECOGIDA Y ENTREGA DE SU COCHE EN LA PUERTA DE LA TERMINAL DEL AEROPUERTO BARAJAS. EL MEJOR PRECIO DEL MERCADO CON SERVICIO DE CONDUCTORES EN LA PUERTA DEL AEROPUERTO DE CUALQUIERA DE LAS TERMINALES DE MADRID T1, T2 Ó T4.</p>
+					</div>
+				</div>
+
+				<div class="card card--lg card--border card--shadow-sm" data-aos="fade-down">
+					<img src="img/car.png" alt="Carro" class="card__img-fx">
+					<div class="card__header">
+						<div class="icon-text">
+							<i class="fa fa-clipboard-list"></i>
+							<h3 class="card__title icon-text__content">Otros Servicios</h3>
+						</div>
+					</div>
+					<div class="card__body">
+						<ul class="card__text card__text--dest list">	
+							<li>LIMPIEZA DEL COCHE</li>
+							<li>SEGURIDAD LOS 365 DÍAS</li>
+							<li>ATENCIÓN TELEFÓNICA LOS 365 DÍAS</li>
+							<li>PAGO CON TARJETAS (TPV)</li>
+							<li>CHOFERES IDENTIFICADOS Y CAPACITADOS</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Section -->
+
+	<!-- terminal -->
+	<section class="l-section l-section--terminal l-section--pb-normal bg-fixed" style="background-image: url(img/pink.jpg);">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-9">
+					<article class="card card--terminal border-0 shadow" data-aos="fade-up">
+						<div class="row no-gutters">
+							<div class="col-md-7">
+								<div class="card__body">
+									<h3 class="card__title card__title--separator">CERCANÍA AL TERMINAL</h3>
+									<p class="card__text text-justify">NUESTRO PARKING SITUADO JUNTO AL AEROPUERTO DE MADRID BARAJAS, CUENTA CON TODO LO NECESARIO PARA QUE VIAJE TRANQUILO Y SU VEHÍCULO ESTÉ SIEMPRE SEGURO. A PRECIOS TAN ECONÓMICOS Y DE CALIDAD. ¿POR QUÉ PAGAR MÁS?.</p>
+
+									<p class="card__text text-justify">NUESTROS CONDUCTORES LE ATENDERÁN AMABLEMENTE CON MUCHA PROFESIONALIDAD Y RESPONSABILIDAD, POR ELLO CONTAMOS SOLO CON PERSONAL ALTAMENTE CUALIFICADO.</p>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="ad-slider">
+									<div><img src="img/ad1.jpg" alt=""></div>
+									<div><img src="img/ad2.jpg" alt=""></div>
+									<div><img src="img/ad3.jpg" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End terminal -->
+
+	<!-- Parking 3 steps -->
+	<section class="l-section l-section--steps">
+		<div class="container">
+			<h2 class="l-section__title">Parking en Solo 3 pasos</h2>
+			<div class="l-steps">
+				<div class="step" data-aos="flip-left">
+					<div class="step__step"><span>Paso 1</span></div>
+					<div class="step__icon">
+						<i class="fa fa-mobile-alt"></i>
+					</div>
+					<div class="step__content">
+						<h3>Reserva</h3>
+						<hr>
+						<p>SELECCIONA LAS FECHAS E INGRESA TUS DATOS, TE ENVIAREMOS LA CONFIRMACIÓN DEL SERVICIO DE MANERA AUTOMÁTICA.</p>
+					</div>
+				</div>
+
+				<div class="step" data-aos="flip-left" data-aos-delay="100">
+					<div class="step__step"><span>Paso 2</span></div>
+					<div class="step__icon">
+						<i class="fa fa-key"></i>
+					</div>
+					<div class="step__content">
+						<h3>Recogida</h3>
+						<hr>
+						<p>SELECCIONA LAS FECHAS E INGRESA TUS DATOS, TE ENVIAREMOS LA CONFIRMACIÓN DEL SERVICIO DE MANERA AUTOMÁTICA.</p>
+					</div>
+				</div>
+
+				<div class="step" data-aos="flip-left" data-aos-delay="200">
+					<div class="step__step"><span>Paso 3</span></div>
+					<div class="step__icon">
+						<i class="fa fa-car-alt"></i>
+					</div>
+					<div class="step__content">
+						<h3>Entrega</h3>
+						<hr>
+						<p>SELECCIONA LAS FECHAS E INGRESA TUS DATOS, TE ENVIAREMOS LA CONFIRMACIÓN DEL SERVICIO DE MANERA AUTOMÁTICA.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Parking 3 steps -->
+
+	<!-- Section Support -->
+	<section class="l-section bg-gray py-0 l-support">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-md-6 p-0">
+					<div class="l-support__content">
+						<h2 class="l-section__title">ATENCIÓN AL CLIENTE</h2>
+						<div class="l-support-icons">
+							<div class="support">
+								<div class="support__icon">
+									<div class="support__icon-icon">
+										<i class="fa fa-phone"></i>
+									</div>
+								</div>
+								<div class="support__content">
+									<a href="#" class="btn btn--primary">+34 912 12 86 59</a>
+									<h3 class="support__title text-uppercase">Reserva</h3>
+									<p class="text-muted mt-2 text-uppercase text-primary mb-0"><small>Solo para reservas</small></p>
+								</div>
+							</div>
+
+							<div class="support">
+								<div class="support__icon">
+									<div class="support__icon-icon">
+										<i class="fa fa-barcode"></i>
+									</div>
+								</div>
+								<div class="support__content">
+									<a href="#" class="btn btn--primary">Solicítala aquí</a>
+									<h3 class="support__title text-uppercase">SOLICITUD DE FACTURAS</h3>
+								</div>
+							</div>
+
+							<div class="support">
+								<div class="support__icon">
+									<div class="support__icon-icon">
+										<i class="fa fa-mobile-alt"></i>
+									</div>
+								</div>
+								<div class="support__content">
+									<a href="#" class="btn btn--primary">+34 603 28 48 00</a>
+									<h3 class="support__title text-uppercase">ASISTENCIA EN AEROPUERTO</h3>
+								</div>
+							</div>
+
+							<div class="support">
+								<div class="support__icon">
+									<div class="support__icon-icon">
+										<i class="fa fa-envelope"></i>
+									</div>
+								</div>
+								<div class="support__content">
+									<a href="#" class="btn btn--primary">ESCRÍBENOS</a>
+									<h3 class="support__title text-uppercase">SOLICITUD DE FACTURAS</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 p-0">
+					<img src="img/handshake.jpg" alt="Soporte" class="w-100 d-block h-100 img-cover">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Section Support -->
+
+	<!-- Site Footer -->
+	<footer class="site-footer bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0 text-lg-center">
+					<img src="https://parkingplus.es/aparcamiento/images/logo_factura.png" alt="" class="img-fluid" width="190">
+					<nav class="social justify-content-start justify-content-lg-center">
+						<a href="#">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</nav>
+				</div>
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0">
+					<ul>
+						<li>
+							<strong>
+								<i class="fa fa-map-marker-alt mr-1"></i>
+								Dirección:
+							</strong>
+							<br>Calle Miguel de Cervantes 10. CP 28860.
+						</li>
+						<li>
+							<strong>
+								<i class="fa fa-phone mr-1"></i>
+								ASISTENCIA EN AEROPUERTO:
+							</strong>
+							<br>+34 603 28 48 00
+						</li>
+						<li>
+							<strong>
+								<i class="fa fa-mobile-alt mr-1"></i>
+								RESERVAS:
+							</strong>
+							<br>+34 912 12 86 59
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0">
+					<nav>
+						<ul class="simple-list">
+							<li><a href="#">Política de Privacidad</a></li>
+							<li><a href="#">Política de Uso de Cookies</a></li>
+							<li><a href="#">Condiciones Generales de Contrato y Servicio</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-12 col-lg-3 mb-5 mb-lg-0">
+					<h3>Contacto:</h3>
+					<ul>
+						<li>
+							<a href="">
+								<i class="fa fa-envelope mr-1"></i>
+								contacto@parkingplus.es
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fab fa-whatsapp mr-1"></i>
+								+34 603 28 48 00
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Site Footer -->
+
+	<!-- SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
